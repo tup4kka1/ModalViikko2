@@ -11,7 +11,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View>
-        <Modal visible={showModal}>
+        <Modal visible={showModal} onRequestClose={() => toggleModal(!showModal)}>
         <View>
             <View style={{alignItems: 'center', marginTop:200, backgroundColor:"lightgrey", padding: 20}}>
               <Text style={{textAlign: 'center'}} >This is the modal ahahahahh</Text>
